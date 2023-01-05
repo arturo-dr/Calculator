@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zigu: calculadora comisiones</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Calculadora para obtener montos y comisiones al transaccionar con Zigu como procesadora de pagos.">
+    <meta name="author" content="Arturo Diaz">
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-container">
+        <div>
+            <img class="zigu-logo" src="/static/zigu_logo.png">
+        </div>
+        <div>
+            <h2 class="title">Conoce cuánto pagarías por tus transacciones</h2>
+        </div>
+    </div>
+    <div class="main-container">
+        <form method="POST">
+            <div class="input-container">
+                <h3 class="title">Calculadora</h3>
+                <label for ="amount" class="form-label">Monto</label>
+                <input class="amount-box" name="amount" id="amount" type="number" placeholder="$1,000.00">
+                <input class="payment-button" type="submit" value="Calcular">
+            </div>
+        </form>
+        <div class="output-container">
+            <h3 class="title">Resultados</h3>
+            <p>{{ result }}</p>                          
+        </div>
+    </div>
+</body>
+</html>
