@@ -38,7 +38,7 @@
    display: flex;
    flex-direction: column;
    width: 500px;
-   height: 500px;
+   height: 300px;
    border-width: 1px;
    border-style: solid;
    border-radius: 10px;
@@ -49,7 +49,7 @@
    display: flex;
    flex-direction: column;
    width: 500px;
-   height: 500px;
+   height: 300px;
    border-width: 1px;
    border-style: solid;
    border-radius: 10px;
@@ -91,11 +91,11 @@
  }
 
 
- .output-amount-box {
-   font-family: 'Roboto', sans-serif;
-   display: block;
-   width: 200px;
-   height: 30px;
-   border:1px solid #7174d7bf;
-   border-radius: 3px;
+ .result {
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  width: 200px;
+  height: 30px;
+  border:1px solid #7174d7bf;
+  border-radius: 3px;
  }

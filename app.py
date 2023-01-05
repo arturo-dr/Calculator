@@ -10,9 +10,9 @@ app = Flask(__name__)
 # Add a single endpoint that we can use for testing
 @app.route('/', methods=['GET','POST'])
 def home():
-    transaction = ()
+    transaction = ((0),(0))
     if request.method == "POST":        
-        transaction = (zigu_fees(float(request.form.get("amount"))))
+        transaction = zigu_fees(float(request.form.get("amount")))
     return render_template('index.html', result=transaction)
 
 
